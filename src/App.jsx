@@ -4,9 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { motion } from 'motion/react';
 import InfiniteScroll from './components/InfiniteScroll';
-import BlurText from "./components/BlurText";
-import AnimatedContent from './components/AnimatedContent'
-import TextType from './components/TextType';
+import Location from './components/Location';
 
 function App() {
 
@@ -33,21 +31,6 @@ function App() {
 
         <main>
 
-          {/* <AnimatedContent
-            distance={100}
-            direction="vertical"
-            reverse={false}
-            duration={0.8}
-            ease="ease"
-            initialOpacity={0}
-            animateOpacity
-            scale={1.1}
-            threshold={0}
-            delay={1}
-          >
-            <img className='h-[120px] mb-[20px]' src={vivek_rajput_pfp} alt="" />
-          </AnimatedContent> */}
-
           <motion.img
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,23 +38,6 @@ function App() {
             src={vivek_rajput_pfp}
             className='h-[120px] mb-[20px]'
           />
-
-
-          {/* <motion.img className='h-[120px] mb-[20px]' src={vivek_rajput_pfp} alt="" /> */}
-
-          {/* <BlurText
-            text="Hey, I’m Vivek Rajput."
-            delay={100}
-            animateBy="words"
-            direction="left"
-          />
-          <BlurText
-            text="Dreamer & Designer"
-            delay={400}
-            animateBy="words"
-            direction="left"
-            className='font-[600] text-5xl'
-          /> */}
 
 
           {/* <h2 className='font-[600] mb-[5px] text-5xl'>Hey, I’m Vivek Rajput.</h2> */}
@@ -268,6 +234,8 @@ font-family: "Rubik", sans-serif;
 font-weight: 450;
  }
  `}</style>
+
+ <Location />
 
 
     </>
