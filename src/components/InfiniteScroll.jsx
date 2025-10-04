@@ -12,7 +12,7 @@ export default function InfiniteScroll() {
     ];
 
     return (
-        <div className="min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="flex items-center justify-center overflow-hidden">
             <div className="w-full overflow-hidden">
                 <div className="flex animate-scroll">
                     {/* First set of items */}

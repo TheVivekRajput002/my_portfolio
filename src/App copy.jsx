@@ -12,11 +12,6 @@ function App() {
   return (
     <>
 
-        <div className='max-md:pt-[100px] pt-45 border-t-0 border-b-0 pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[10%] pl-[10%] m-auto border-[1.5px] border-r-[#e1e1e1] border-l-[#e1e1e1]'>
-          <HeroSection />
-        </div>
-
-
       <motion.div
         initial={{
           opacity: 0
@@ -27,16 +22,19 @@ function App() {
         transition={{
           delay: 2
         }}
-        className='absolute left-0 right-0'>
+        className='absolute max-lg:top-[65vh] max-xl:top-[70vh] top-[75vh] '>
         <InfiniteScroll />
       </motion.div>
 
-      <div className=" h-auto border-t-0 border-b-0 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[10%] pl-[10%] pt-[12%] m-auto border-[1.5px] border-r-[#e1e1e1] border-l-[#e1e1e1]" >
+      <div className="h-auto max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[10%] pl-[10%] pt-[12%] m-auto border-[1.5px] border-r-[#e1e1e1] border-l-[#e1e1e1]" >
 
+<div className='max-md:mt-[100px] '>
+        <HeroSection />
+</div>
 
-        <div className='max-md:hidden'>
-          <Navbar />
-        </div>
+<div className='max-md:hidden'>
+        <Navbar />
+</div>
 
         {/* Sec 2 : About section  */}
 
@@ -54,7 +52,7 @@ function App() {
             duration: 0.5
           }}
         >
-          <h2 className='font-[650] text-2xl max-lg:mt-[40vh] mt-[185px]'>About</h2>
+          <h2 className='font-[650] text-2xl mt-[390px]'>About</h2>
           <p className='text-[#656565] text-lg mt-[15px]'>I’m Mia Carter, a curious designer, coder, and storyteller. Currently a student at Springfield High School, but always exploring the limitless possibilities of creativity and technology.</p>
           <p className='text-[#656565] text-lg mt-[15px] '>I thrive on transforming ideas into reality, whether it's crafting digital interfaces, designing immersive visuals, or building websites that feel effortless to use.</p>
 
