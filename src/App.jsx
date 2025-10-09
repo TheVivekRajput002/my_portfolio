@@ -19,7 +19,7 @@ function App() {
   return (
     <>
 
-      <div className='max-md:pt-[100px] pt-45 border-t-0 border-b-0 pb-20 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[#e1e1e1] border-l-[#e1e1e1]'>
+      <div className='bg-[var(--color-primary)] text-[var(--color-maintext)] max-md:pt-[100px] pt-45 border-t-0 border-b-0 pb-20 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)]'>
         <HeroSection Name={Data[0].Name} Role={Data[0].Role} Description={Data[0].Description} />
       </div>
 
@@ -38,7 +38,7 @@ function App() {
         <InfiniteFlow />
       </motion.div>
 
-      <div className=" h-auto border-t-0 border-b-0 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] pt-[15%] m-auto border-[1.5px] border-r-[#e1e1e1] border-l-[#e1e1e1]" >
+      <div className=" bg-[--color-bg] h-auto border-t-0 border-b-0 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] pt-[15%] m-auto border-[1.5px] border-r-[#e1e1e1] border-l-[#e1e1e1]" >
 
         <Navbar />
 

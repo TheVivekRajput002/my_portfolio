@@ -17,7 +17,7 @@ export default function Navbar() {
         delay: 1.2,
         duration: 0.6
       }}
-      className="max-md:hidden fixed top-8 left-1/2 -translate-x-1/2 flex items-center gap-4 px-2 py-2 rounded-3xl transparent-2 bg-white/70 border border-black/10">
+      className="max-md:hidden fixed top-8 left-1/2 -translate-x-1/2 flex items-center gap-4 px-2 py-2 rounded-3xl transparent-2 bg-white/70 border border-[var(--color-darkgray)]">
 
       {/* Home */}
       <a href="./" className="h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-gray-100 hover:px-5 hover:py-4 transition ease-in-out duration-75">

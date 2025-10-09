@@ -43,11 +43,11 @@ export default function InfiniteFlow() {
             key={`first-${image.id}`}
             className="flex-shrink-0"
           >
-            <div  className=" flex-shrink-0 backdrop-blur-3xl bg-[#e3e2e240] border-1 border-[#cfcece54] rounded-2xl p-5 ">
+            <div  className=" flex-shrink-0 backdrop-blur-3xl bg-[var(--color-darkgray)] border-1 border-[var(--color-gray)] rounded-2xl p-5 ">
               <img
                 src={image.src}
                 alt={image.alt}
-                className='h-70 w-auto rounded-xl border-1 border-solid border-[#e3e3e3bb]'
+                className='h-70 w-auto rounded-xl border-1 border-solid border-[var(--color-lightgray)]'
               />
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function InfiniteFlow() {
             key={`second-${image.id}`}
             className="flex-shrink-0"
           >
-            <div  className="mx-8 flex-shrink-0 backdrop-blur-3xl bg-[#f1f1f140] border-1 border-[#dddddd54] rounded-2xl p-5 ">
+            <div  className="mx-8 flex-shrink-0 backdrop-blur-3xl bg-[var(--color-darkgray)] border-1 border-[var(--color-gray)] rounded-2xl p-5 ">
               <img
                 src={image.src}
                 alt={image.alt}

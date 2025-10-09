@@ -3,8 +3,8 @@ import React from 'react'
 const GetInTouch = ({conclusion}) => {
     return (
         <>
-            <h2 className='font-[500]  text-3xl mb-4 mt-12'>Get in touch</h2>
-            <p className='text-[#656565] text-md mt-[15px] mb-10'>{conclusion.para}</p>
+            <h2 className='font-[500] text-[var(--color-maintext)] text-3xl mb-4 mt-12'>Get in touch</h2>
+            <p className='text-[var(--color-sidetext)] text-md mt-[15px] mb-10'>{conclusion.para}</p>
             <form action="" >
                 <fieldset className='flex flex-col gap-5'>
                     <div className='w-100% flex gap-5'>
