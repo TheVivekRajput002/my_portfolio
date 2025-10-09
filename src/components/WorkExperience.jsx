@@ -3,7 +3,7 @@ import React from 'react'
 const WorkExperience = ({ experience }) => {
     return (
         <>
-            <h2 className='font-[500]  text-3xl mb-8 mt-12'>Work Experience</h2>
+            <h2 className='font-[500] text-3xl mb-8 mt-12 text-[var(--color-maintext)]'>Work Experience</h2>
 
             <div className='flex flex-col gap-4'>
 

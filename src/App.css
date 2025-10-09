@@ -6,12 +6,34 @@ body{
  font-family: 'Poppins', sans-serif;
 }
 
-@theme {
+:root {
+  --color-bg: light-dark(white,black);
+  --color-maintext: light-dark(black,#ffffff);
+  --color-sidetext: light-dark(#656565,#b8b8b8);
+  --color-gray: light-dark(#cfcece54,#ffffff54);
+  --color-darkgray: light-dark(#d1d1d140,#96939351);
+  --color-primary: light-dark(white ,#262626);
+  --color-lightgray: light-dark(#e1e1e1, #4c4c4c);
+  --color-navbg: light-dark(#ffffff92,#2222229b);
+  }
+  
+  /* @theme {
+  --color-bg: white;
   --color-maintext: black;
   --color-sidetext: #656565;
   --color-gray: #cfcece54;
   --color-darkgray: #d1d1d140;
   --color-primary: white;
   --color-lightgray: #e1e1e1;
-}
+} */
 
+  /* :root {
+    --color-bg: rgb(0, 0, 0);
+    --color-maintext: rgb(255, 255, 255);
+    --color-sidetext: #b8b8b8;
+    --color-gray: #ffffff54;
+    --color-darkgray: #96939351;
+    --color-primary: rgb(38, 38, 38);
+    --color-navbg: #2222229b;
+    --color-lightgray: #4c4c4c; light-dark(#e1e1e1, #000000);
+  } */

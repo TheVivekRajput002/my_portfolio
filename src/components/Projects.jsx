@@ -18,7 +18,7 @@ const Projects = ({ projects }) => {
                             <p className='font-[600] text-[var(--color-maintext)] text-2xl '>{projects.project_name}</p>
                             <p className=' text-sm text-[var(--color-sidetext)] mt-[-10px]'>{projects.project_description}</p>
                             <span>
-                                <button className='bg-[var(--color-darkgray)] rounded-2xl px-6 py-3 h-full font-[500] text-md'>View Project &gt;</button>
+                                <button className='bg-[var(--color-darkgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-md'>View Project &gt;</button>
                             </span>
                         </div>
                     </div>
