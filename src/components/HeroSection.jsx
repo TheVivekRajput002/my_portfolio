@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Data from '../assets/Data.json'
 import { motion } from 'motion/react';
 import vivek_rajput_pfp from '../assets/vr_professional_pfp.png'
 
-const HeroSection = () => {
+const HeroSection = ({Name, Role , Description}) => {
     return (
         <>
 
@@ -35,10 +35,10 @@ const HeroSection = () => {
                         ease: "easeOut",
                         delay: 1.9
                     }}
-                    className='font-[650] max-md:text-[35px] text-[40px] fontt'
+                    className='font-[650] max-md:text-[35px] text-[40px] clash'
 
                 >
-                    I'm Vivek Rajput.
+                    {Name}
                 </motion.p>
 
                 <motion.p
@@ -55,8 +55,8 @@ const HeroSection = () => {
                         ease: "easeOut",
                         delay: 1.8
                     }}
-                    className='font-[650] text-[40px] max-md:text-[35px] mt-[-12px] fontt'>
-                    Dreamer & Designer
+                    className='font-[650] text-[40px] max-md:text-[35px] mt-[-12px] clash'>
+                    {Role}
                 </motion.p>
 
 
@@ -75,8 +75,8 @@ const HeroSection = () => {
                         ease: "easeOut",
                         delay: 1.5
                     }}
-                    className='text-[#656565] text-lg max-lg:text-sm mt-5 max-md:mt-2 mb-8 leading-relaxed'>
-                    Crafting seamless experiences and bold visuals. College student by day, creative thinker, and aspiring innovator by night.
+                    className='text-[#656565] text-md max-lg:text-sm mt-2 max-md:mt-2 mb-10 leading-relaxed poppins'>
+                    {Description}
                 </motion.p>
 
                 <motion.span
@@ -94,7 +94,7 @@ const HeroSection = () => {
                         delay: 1.3
                     }}
                     className='bg-[#E1F9DC] px-7 py-4 rounded-full text-center max-md:px-5 max-md:py-3'>
-                    <span className='text-lg font-medium text-[#178D00] max-md:text-sm' >
+                    <span className='text-md font-medium text-[#178D00] max-md:text-sm poppins' >
                         <span className="pulse-container">
                             <span className="pulse-dot"></span>
                             <span className="pulse-ring"></span>
@@ -107,6 +107,23 @@ const HeroSection = () => {
             </main>
 
             <style jsx>{`
+
+
+ @import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800&display=swap');
+ @import url('https://api.fontshare.com/v2/css?f[]=clash-grotesk@500,600&display=swap');
+
+ .clash{
+ font-family: 'Clash Grotesk', sans-serif;
+font-weight: 500; /* or 600 */
+
+ }
+
+ .cabinet{
+ font-family: 'Cabinet Grotesk', sans-serif;
+ }
+
+
+
                    .pulse-container {
             position: relative;
             display: inline-block;
