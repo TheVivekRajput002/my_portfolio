@@ -12,7 +12,7 @@ const Projects = ({ projects }) => {
             <div className='flex flex-col '>
 
                 {projects.map((projects, i) => (
-                    <div key={i} className='border-[var(--color-darkgray)] border-solid border-1 rounded-3xl p-4 pb-6 flex flex-col gap-4 m-5'>
+                    <div key={i} className='border-[var(--color-darkgray)] border-solid border-1 rounded-3xl p-4 pb-6 flex flex-col gap-4 m-5 max-md:m-2'>
                         <img className='rounded-2xl border-[var(--color-gray)] border-solid border-1' src={projects.project_img} alt="" />
                         <div className='flex flex-col gap-5 mx-auto w-[90%]'>
                             <p className='font-[600] text-[var(--color-maintext)] text-2xl '>{projects.project_name}</p>

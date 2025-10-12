@@ -35,7 +35,7 @@ const HeroSection = ({Name, Role , Description}) => {
                         ease: "easeOut",
                         delay: 2.2
                     }}
-                    className='font-[650] text-[var(--color-maintext)] max-md:text-[35px] text-[40px] clash'
+                    className='font-[650] text-[var(--color-maintext)] max-md:text-3xl text-4xl clash'
 
                 >
                     {Name}
@@ -55,7 +55,7 @@ const HeroSection = ({Name, Role , Description}) => {
                         ease: "easeOut",
                         delay: 2.1
                     }}
-                    className='font-[650] text-[var(--color-maintext)] text-[40px] max-md:text-[35px] mt-[-12px] clash'>
+                    className='font-[650] text-[var(--color-maintext)] text-4xl max-md:text-2xl clash '>
                     {Role}
                 </motion.p>
 
@@ -75,7 +75,7 @@ const HeroSection = ({Name, Role , Description}) => {
                         ease: "easeOut",
                         delay: 1.8
                     }}
-                    className='text-[var(--color-sidetext)] text-md max-lg:text-sm mt-2 max-md:mt-2 mb-10 leading-relaxed poppins'>
+                    className='text-[var(--color-sidetext)] text-md max-lg:text-sm mt-4 max-md:mt-2 mb-10 leading-relaxed poppins'>
                     {Description}
                 </motion.p>
 

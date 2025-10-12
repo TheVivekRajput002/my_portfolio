@@ -43,11 +43,11 @@ export default function InfiniteFlow() {
             key={`first-${image.id}`}
             className="flex-shrink-0"
           >
-            <div  className=" flex-shrink-0 backdrop-blur-3xl bg-[var(--color-darkgray)] border-1 border-[var(--color-gray)] rounded-2xl p-5 ">
+            <div  className="max-md:p-2 flex-shrink-0 backdrop-blur-3xl bg-[var(--color-darkgray)] border-1 border-[var(--color-gray)] rounded-2xl p-5 ">
               <img
                 src={image.src}
                 alt={image.alt}
-                className='h-70 w-auto rounded-xl border-1 border-solid border-[var(--color-lightgray)]'
+                className='h-70 max-md:h-50 w-auto rounded-xl border-1 border-solid border-[var(--color-lightgray)]'
               />
             </div>
           </div>
