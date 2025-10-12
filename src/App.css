@@ -11,7 +11,7 @@ body{
   --color-maintext: light-dark(black,#ffffff);
   --color-sidetext: light-dark(#656565,#b8b8b8);
   --color-gray: light-dark(#cfcece54,#ffffff54);
-  --color-darkgray: light-dark(#d1d1d140,#96939351);
+  --color-darkgray: light-dark(#e4e4e466,#49494975);
   --color-primary: light-dark(white ,#262626);
   --color-lightgray: light-dark(#e1e1e1, #4c4c4c);
   --color-navbg: light-dark(#ffffff92,#2222229b);

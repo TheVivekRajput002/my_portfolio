@@ -12,7 +12,7 @@ const HeroSection = ({Name, Role , Description}) => {
                 <motion.img
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, ease: "easeOut", delay: 1 }}
+                    transition={{ duration: 0.7, ease: "easeOut", delay: 1.1 }}
                     src={vivek_rajput_pfp}
                     className='h-[120px] mb-[20px] max-md:h-[85px]'
                 />
@@ -33,7 +33,7 @@ const HeroSection = ({Name, Role , Description}) => {
                     transition={{
                         duration: 0.5,
                         ease: "easeOut",
-                        delay: 1.9
+                        delay: 2.2
                     }}
                     className='font-[650] text-[var(--color-maintext)] max-md:text-[35px] text-[40px] clash'
 
@@ -53,7 +53,7 @@ const HeroSection = ({Name, Role , Description}) => {
                     transition={{
                         duration: 0.5,
                         ease: "easeOut",
-                        delay: 1.8
+                        delay: 2.1
                     }}
                     className='font-[650] text-[var(--color-maintext)] text-[40px] max-md:text-[35px] mt-[-12px] clash'>
                     {Role}
@@ -73,7 +73,7 @@ const HeroSection = ({Name, Role , Description}) => {
                     transition={{
                         duration: 0.5,
                         ease: "easeOut",
-                        delay: 1.5
+                        delay: 1.8
                     }}
                     className='text-[var(--color-sidetext)] text-md max-lg:text-sm mt-2 max-md:mt-2 mb-10 leading-relaxed poppins'>
                     {Description}
@@ -91,10 +91,10 @@ const HeroSection = ({Name, Role , Description}) => {
                     transition={{
                         duration: 0.5,
                         ease: "easeIn",
-                        delay: 1.3
+                        delay: 1.6
                     }}
-                    className='bg-[#E1F9DC] px-7 py-4 rounded-full text-center max-md:px-5 max-md:py-3'>
-                    <span className='text-md font-medium text-[#178D00] max-md:text-sm poppins' >
+                    className='bg-[#E1F9DC] px-6 py-3 rounded-full text-center max-md:px-5 max-md:py-3'>
+                    <span className='text-sm font-medium text-[#178D00] max-md:text-sm poppins' >
                         <span className="pulse-container">
                             <span className="pulse-dot"></span>
                             <span className="pulse-ring"></span>
@@ -127,10 +127,10 @@ font-weight: 500; /* or 600 */
                    .pulse-container {
             position: relative;
             display: inline-block;
-            width: 12px;
-            height: 12px;
+            width: 8px;
+            height: 8px;
             vertical-align: middle;
-            margin-right: 20px;
+            margin-right: 14px;
         }
 
         .pulse-dot {

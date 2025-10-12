@@ -4,7 +4,6 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { motion } from 'motion/react';
 import HeroSection from './components/HeroSection';
-import InfiniteScroll from './components/InfiniteScroll';
 import GetInTouch from './components/GetInTouch';
 import './App.css'
 import InfiniteFlow from './components/InfiniteFlow';
@@ -31,7 +30,7 @@ function App() {
           opacity: 1
         }}
         transition={{
-          delay: 2
+          delay: 2.8
         }}
         className='absolute left-0 right-0'>
         {/* <InfiniteScroll /> */}

@@ -8,7 +8,7 @@ const WorkExperience = ({ experience }) => {
             <div className='flex flex-col gap-4'>
 
                 {experience.map((experience, i) => (<div key={i} className='flex w-[70%] justify-between justify-content items-center'>
-                    <p className='font-[350] text-md text-[var(--color-sidetext)] '>{experience.time_period}</p>
+                    <p className='font-[450] text-md opacity-40 text-[var(--color-maintext)] '>{experience.time_period}</p>
                     <p className='font-[500] text-lg text-[var(--color-maintext)]'>{experience.role}</p>
                 </div>
 
