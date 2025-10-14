@@ -2,9 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-body{
- font-family: 'Poppins', sans-serif;
+
+
+body, html {
+  font-family: 'Poppins', sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;  /* for Internet Explorer and Edge */
+  scrollbar-width: none;      /* for Firefox */
+}
+
 
 :root {
   --color-bg: light-dark(white,black);
