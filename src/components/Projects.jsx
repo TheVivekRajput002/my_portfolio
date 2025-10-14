@@ -34,7 +34,7 @@ const Projects = ({ projects }) => {
 
                 {projects.map((projectsData, i) => (
                     <div key={i} className='border-[var(--color-darkgray)] border-solid border rounded-3xl p-4 max-md:p-2 pb-6 flex flex-col gap-4 m-5 max-md:m-0 max-md:mb-2'>
-                        <img className='rounded-2xl w-full h-auto border-[var(--color-gray)] border-solid border' src={projectsData.project_img} alt="" />
+                        <img className='rounded-2xl w-full h-auto border-[var(--color-gray)] border-solid border' src={KrishiMitraSS} alt="" />
                         <div className='flex flex-col gap-5 mx-auto w-[90%]'>
                             <p className='font-[600] text-[var(--color-maintext)] text-2xl '>{projectsData.project_name}</p>
                             <p className=' text-sm text-[var(--color-sidetext)] mt-[-10px]'>{projectsData.project_description}</p>
