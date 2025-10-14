@@ -37,7 +37,7 @@ function App() {
         <InfiniteFlow />
       </motion.div>
 
-      <div className=" bg-[var(--color-primary)] h-auto border-t-0 border-b-0 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] pt-[16%] max-md:pt-[1%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)]" >
+      <div className=" bg-[var(--color-primary)] h-auto border-t-0 border-b-0 max-md:w-[98%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] pt-[16%] max-md:pt-[1%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)]" >
 
         <Navbar />
 
