@@ -1,5 +1,4 @@
 
-import img from './assets/dummy.png'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { motion } from 'motion/react';
