@@ -83,7 +83,7 @@ export default function Navbar() {
           <Instagram strokeWidth={1.5} color='var(--color-maintext)' />
         </a>
 
-        <a href="https://read.cv/" target="_blank" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-5 hover:py-4 transition">
+        <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-5 hover:py-4 transition">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
         </a>
 
@@ -192,7 +192,7 @@ export default function Navbar() {
         }}
         className="md:hidden fixed bottom-[3vh] left-1/2 -translate-x-1/2 flex items-center gap-4 px-4 py-4 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] ">
 
-        <a href="https://read.cv/" target="_blank" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-5 hover:py-4 transition">
+        <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-5 hover:py-4 transition">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
         </a>
 
