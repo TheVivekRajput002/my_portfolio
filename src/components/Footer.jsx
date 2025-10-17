@@ -4,7 +4,7 @@ import { Instagram, Mail, Earth, X, Linkedin } from 'lucide-react'
 const Footer = ({ footer }) => {
     return (
         <div>
-            <p className='text-center text-md font-[400] text-[var(--color-maintext)] opacity-50 mb-6'>{footer.copyright_message}</p>
+            <p className='text-center text-md max-md:text-sm font-[400] text-[var(--color-maintext)] opacity-50 mb-6'>{footer.copyright_message}</p>
 
             <div className='flex gap-5 justify-center'>
                 <a target="_blank" href="https://www.instagram.com/tvr002/"><Instagram height={20} stroke='var(--color-maintext)' strokeWidth={1.5} /></a>

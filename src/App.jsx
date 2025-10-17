@@ -17,7 +17,7 @@ function App() {
   return (
     < div className='bg-[var(--color-bg)] '>
 
-      <div className='bg-[var(--color-primary)] text-[var(--color-maintext)] max-md:pt-[100px] pt-45 border-t-0 border-b-0 pb-25 max-md:pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)]'>
+      <div className='bg-[var(--color-primary)] text-[var(--color-maintext)] max-md:pt-[100px] pt-45 border-t-0 border-b-0 pb-25 max-md:pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden'>
         <HeroSection Name={Data[0].Name} Role={Data[0].Role} Description={Data[0].Description} />
       </div>
 
@@ -36,7 +36,7 @@ function App() {
         <InfiniteFlow />
       </motion.div>
 
-      <div className=" bg-[var(--color-primary)] h-auto border-t-0 border-b-0 max-md:w-[98%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] pt-[16%] max-md:pt-[1%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)]" >
+      <div className=" bg-[var(--color-primary)] h-auto border-t-0 border-b-0 max-md:w-[98%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] pt-[16%] max-md:pt-[1%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden" >
 
         <Navbar />
 
@@ -52,7 +52,7 @@ function App() {
 
         <GetInTouch conclusion={Data[4]} />
 
-        <div className='pt-30 pb-10'>
+        <div className='max-md:pt-[10vh] pt-30 pb-10'>
           <Footer footer={Data[5]} />
         </div>
 
