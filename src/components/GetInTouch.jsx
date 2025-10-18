@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 
-// https://www.emailjs.com/  NOTTTT 
+// https://www.emailjs.com/  NOTTTT tt
 //  web3forms used 
 
 const GetInTouch = ({ conclusion }) => {
