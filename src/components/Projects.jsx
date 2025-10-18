@@ -41,7 +41,7 @@ const Projects = ({ projects }) => {
                     <img className='rounded-2xl w-full h-auto border-[var(--color-gray)] border-solid border' src={KrishiMitraSS} alt="" />
                     <div className='flex flex-col gap-5 mx-auto w-[90%]'>
                         <p className='font-[600] text-[var(--color-maintext)] text-2xl max-md:text-xl'>Krishi Mitra</p>
-                        <p className=' text-sm text-[var(--color-sidetext)] mt-[-10px] max-md:text-xs'>Collaborated in developing an AI-powered Smart Crop Advisory Platform that offers real-time farming insights, image-based crop analysis, and weather or market alerts. Integrated multilingual chatbot and voice support to assist small and marginal farmers with accessible, data-driven guidance.</p>
+                        <p className=' text-sm text-[var(--color-sidetext)] mt-[-10px] max-md:text-xs'>Collaborated on an AI-powered Crop Advisory Platform providing real-time insights, image-based crop analysis, and multilingual chatbot with voice support for farmer assistance.</p>
                         <span>
                             <button className='bg-[var(--color-darkgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-md max-md:text-sm'>View Project &gt;</button>
                         </span>

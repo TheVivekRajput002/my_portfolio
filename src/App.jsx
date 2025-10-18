@@ -42,9 +42,11 @@ function App() {
 
         <About Para1={Data[1].AboutPara1} Para2={Data[1].AboutPara2} />
 
-        <Projects projects={Data[2]} />
+        {/* <Projects projects={Data[2]} /> */}
 
         <WorkExperience experience={Data[3]} />
+
+        <div className='border-solid border-[var(--color-lightgray)] border-b-[0.5px] w-[100%] mx-auto mt-[5vh]'></div>
 
         {/* section : how can I help - skipped  */}
 

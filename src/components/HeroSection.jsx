@@ -93,7 +93,7 @@ const HeroSection = ({Name, Role , Description}) => {
                         ease: "easeIn",
                         delay: 1.6
                     }}
-                    className='bg-[#E1F9DC] px-6 py-3 rounded-full text-center max-md:px-5 max-md:py-3'>
+                    className='bg-[var(--color-green)] px-6 py-3 rounded-full text-center max-md:px-5 max-md:py-3'>
                     <span className='text-sm font-medium text-[#178D00] max-md:text-sm poppins' >
                         <span className="pulse-container">
                             <span className="pulse-dot"></span>
