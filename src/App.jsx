@@ -42,7 +42,7 @@ function App() {
 
         <About Para1={Data[1].AboutPara1} Para2={Data[1].AboutPara2} />
 
-        {/* <Projects projects={Data[2]} /> */}
+        <Projects projects={Data[2]} />
 
         <WorkExperience experience={Data[3]} />
 
