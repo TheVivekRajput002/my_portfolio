@@ -14,11 +14,11 @@ import WorkExperience from '../components/WorkExperience';
 
 const Home = () => {
     return (
-        < div className='bg-[var(--color-bg)] '>
-
-            <div className='bg-[var(--color-primary)] text-[var(--color-maintext)] max-md:pt-[7vh] pt-45 border-t-0 border-b-0 pb-25 max-md:pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden'>
+        < div className='mx-[14%] pt-[6%] max-md:pt-[12%] max-md:mx-[5%]'>
+{/* 
+            <div className='bg-[var(--color-innerbg)] text-[var(--color-maintext)] max-md:pt-[7vh] pt-45 border-t-0 border-b-0 pb-25 max-md:pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden'>
+            </div> */}
                 <HeroSection Name={Data[0].Name} Role={Data[0].Role} Description={Data[0].Description} />
-            </div>
 
             <motion.div
                 initial={{
@@ -35,33 +35,29 @@ const Home = () => {
                 <InfiniteFlow />
             </motion.div>
 
-            <div className=" bg-[var(--color-primary)] h-auto border-t-0 border-b-0 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] pt-[16%] max-md:pt-[1%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden" >
+            <About Para1={Data[1].AboutPara1} Para2={Data[1].AboutPara2} />
 
-                <Navbar />
+            <ProjectsSection projects={Data[2]} />
 
-                <About Para1={Data[1].AboutPara1} Para2={Data[1].AboutPara2} />
+            <WorkExperience experience={Data[3]} />
 
-                <ProjectsSection projects={Data[2]} />
+            <div className='border-solid border-[var(--color-lightgray)] border-b-[0.5px] w-[100%] mx-auto mt-[5vh]'></div>
 
-                <WorkExperience experience={Data[3]} />
+            {/* section : how can I help - skipped  */}
 
-                <div className='border-solid border-[var(--color-lightgray)] border-b-[0.5px] w-[100%] mx-auto mt-[5vh]'></div>
+            {/* section : testimonials - skipped  */}
 
-                {/* section : how can I help - skipped  */}
+            <GetInTouch conclusion={Data[4]} />
 
-                {/* section : testimonials - skipped  */}
-
-                <GetInTouch conclusion={Data[4]} />
-
-                <div className='max-md:pt-[10vh] pt-30 pb-10 max-md:pb-[15vh]'>
-                    <Footer footer={Data[5]} />
-                </div>
-
-
-
-
-
+            <div className='max-md:pt-[10vh] pt-30 pb-10 max-md:pb-[15vh]'>
+                <Footer footer={Data[5]} />
             </div>
+
+
+
+
+
+            {/* </div> */}
 
 
 

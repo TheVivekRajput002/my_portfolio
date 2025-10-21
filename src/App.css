@@ -22,16 +22,19 @@ body {
 
 
 :root {
-  --color-bg: light-dark(white,black);
-  --color-maintext: light-dark(black,#ffffff);
-  --color-sidetext: light-dark(#656565,#b8b8b8);
-  --color-gray: light-dark(#cfcece54,#ffffff54);
-  --color-darkgray: light-dark(#e4e4e466,#49494975);
-  --color-primary: light-dark(white ,#262626);
-  --color-lightgray: light-dark(#e1e1e1, #4c4c4c);
-  --color-navbg: light-dark(#ffffff92,#2222229b);
-  --color-green: light-dark(#c9fdbe,#b1d7aa);
+  --color-bg: light-dark(white,#000); /* main bg  */
+  --color-innerbg: light-dark( #fafafa70,#262626); /* innerbg  */
+--color-lightgray: light-dark(#e4e4e466, #1f1e1e82); /* l r border , in between lines, project button bg, input bg*/
+--color-navbg: light-dark(#ffffff79,#2222229b); /* navbg */
+--color-darkgray: light-dark(#e1e1e18a,#49494975); /* navbar border, project img border  */
+--color-maintext: light-dark(black,#ffffff); 
+--color-sidetext: light-dark(#656565,#b8b8b8);
+--color-infiniteimgbg: light-dark(#e9e8e854,#36363654); /* infinitflow images bg   */
+--color-projectcardbg: light-dark( #ededed36,#262626); /* project card bg  */
+  --color-gray: light-dark(#d4d4d4,#ffffff54); /* projcet card border, input border  */
+  --color-green: light-dark(#c4ffbb,#c6ffbb);
   }
+
   
   /* @theme {
   --color-bg: white;
