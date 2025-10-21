@@ -1,0 +1,86 @@
+
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import { motion } from 'motion/react';
+import HeroSection from '../components/HeroSection';
+import GetInTouch from '../components/GetInTouch';
+import '../App.css'
+import InfiniteFlow from '../components/InfiniteFlow';
+import About from '../components/About';
+import ProjectsSection from '../components/ProjectsSection';
+import Data from '../assets/Data.json'
+import WorkExperience from '../components/WorkExperience';
+
+
+const Home = () => {
+    return (
+        < div className='bg-[var(--color-bg)] '>
+
+            <div className='bg-[var(--color-primary)] text-[var(--color-maintext)] max-md:pt-[7vh] pt-45 border-t-0 border-b-0 pb-25 max-md:pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden'>
+                <HeroSection Name={Data[0].Name} Role={Data[0].Role} Description={Data[0].Description} />
+            </div>
+
+            <motion.div
+                initial={{
+                    opacity: 0
+                }}
+                animate={{
+                    opacity: 1
+                }}
+                transition={{
+                    delay: 2.8
+                }}
+                className='absolute left-0 right-0'>
+                {/* <InfiniteScroll /> */}
+                <InfiniteFlow />
+            </motion.div>
+
+            <div className=" bg-[var(--color-primary)] h-auto border-t-0 border-b-0 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] pt-[16%] max-md:pt-[1%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden" >
+
+                <Navbar />
+
+                <About Para1={Data[1].AboutPara1} Para2={Data[1].AboutPara2} />
+
+                <ProjectsSection projects={Data[2]} />
+
+                <WorkExperience experience={Data[3]} />
+
+                <div className='border-solid border-[var(--color-lightgray)] border-b-[0.5px] w-[100%] mx-auto mt-[5vh]'></div>
+
+                {/* section : how can I help - skipped  */}
+
+                {/* section : testimonials - skipped  */}
+
+                <GetInTouch conclusion={Data[4]} />
+
+                <div className='max-md:pt-[10vh] pt-30 pb-10 max-md:pb-[15vh]'>
+                    <Footer footer={Data[5]} />
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+            <style jsx>{`
+ @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+ .rubik{
+ 
+//  font-family: "Rubik", sans-serif;
+font-family: "Rubik", sans-serif;
+font-weight: 450;
+ }
+ `}</style>
+
+
+        </div>
+    )
+}
+
+export default Home

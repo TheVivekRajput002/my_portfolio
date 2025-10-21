@@ -30,7 +30,7 @@ body {
   --color-primary: light-dark(white ,#262626);
   --color-lightgray: light-dark(#e1e1e1, #4c4c4c);
   --color-navbg: light-dark(#ffffff92,#2222229b);
-  --color-green: light-dark(#c9fdbe,#b1f7a3);
+  --color-green: light-dark(#c9fdbe,#b1d7aa);
   }
   
   /* @theme {
