@@ -3,7 +3,7 @@ import Data from '../assets/Data.json'
 import { motion } from 'motion/react';
 import vivek_rajput_pfp from '../assets/vr_professional_pfp.png'
 
-const HeroSection = ({Name, Role , Description}) => {
+const HeroSection = ({ Name, Role, Description }) => {
     return (
         <>
 
@@ -99,7 +99,8 @@ const HeroSection = ({Name, Role , Description}) => {
                             <span className="pulse-dot"></span>
                             <span className="pulse-ring"></span>
                         </span>
-                        Available for new project</span>
+                        Available For new project
+                        </span>
                 </motion.span>
 
 

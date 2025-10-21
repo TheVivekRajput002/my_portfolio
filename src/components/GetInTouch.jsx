@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 
-// https://www.emailjs.com/  NOTTTT 
+// https://www.emailjs.com/  NOTTTT tt
 //  web3forms used 
 
 const GetInTouch = ({ conclusion }) => {
@@ -50,17 +50,17 @@ const GetInTouch = ({ conclusion }) => {
                         <input type="hidden" name="subject" value="New Portfolio Message"></input>
                         <input name='from_name'
                             required
-                            type="text" placeholder='Full Name' className=' bg-[var(--color-darkgray)] h-14 w-[50%] max-md:w-[100%] text-md max-md:text-sm font-[500] text-[var(--color-maintext)] p-3 border rounded-2xl border-[var(--color-gray)]' />
+                            type="text" placeholder='Full Name' className=' bg-[var(--color-lightgray)] h-14 w-[50%] max-md:w-[100%] text-md max-md:text-sm font-[500] text-[var(--color-maintext)] p-3 border rounded-2xl border-[var(--color-gray)]' />
                         <input name='email'
                             required
-                            type="email" placeholder='Email Address' className='  bg-[var(--color-darkgray)] h-14 w-[50%] max-md:w-[100%] text-md max-md:text-sm font-[500] text-[var(--color-maintext)] p-3 border rounded-2xl border-[var(--color-gray)]' />
+                            type="email" placeholder='Email Address' className='  bg-[var(--color-lightgray)] h-14 w-[50%] max-md:w-[100%] text-md max-md:text-sm font-[500] text-[var(--color-maintext)] p-3 border rounded-2xl border-[var(--color-gray)]' />
                         {/* <input name='Email' type="email" placeholder='Email Address' className=' bg-[#f5f3f3b3] h-14 w-[50%] text-md font-[500] text-[#000000b3] p-3 border rounded-2xl border-[#dbdbdb]' /> */}
 
                     </div>
                     <textarea
                         required
                         placeholder='Write your message'
-                        name="message" className='  bg-[var(--color-darkgray)] h-42 w-[100%] text-md max-md:text-sm font-[500] text-[var(--color-maintext)] p-4 border rounded-2xl border-[var(--color-gray)]' />
+                        name="message" className='  bg-[var(--color-lightgray)] h-42 w-[100%] text-md max-md:text-sm font-[500] text-[var(--color-maintext)] p-4 border rounded-2xl border-[var(--color-gray)]' />
                     <button type='submit' className='h-14 w-auto hover:bg-[#383838] bg-black text-white rounded-2xl max-md:text-md font-[600]'>Send Message</button>
 
                 </fieldset>
