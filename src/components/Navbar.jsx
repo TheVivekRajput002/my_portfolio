@@ -45,7 +45,7 @@ export default function Navbar() {
           delay: 1.3,
           duration: 0.7
         }}
-        className="max-md:hidden fixed top-6 left-1/2 -translate-x-1/2 flex items-center gap-4 px-4 py-2 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] h-20">
+        className="max-md:hidden fixed top-7 z-100 left-1/2 -translate-x-1/2 flex items-center gap-4 px-4 py-2 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] h-20">
 
         {/* Home */}
         <Link to="/" className="h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
@@ -178,13 +178,14 @@ export default function Navbar() {
         }}
         className="z-60 md:hidden fixed bottom-[3vh] left-1/2 -translate-x-1/2 flex items-center gap-4 px-4 py-4 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] backdrop-blur-8xl">
 
-        <Link to="/" className="h-auto flex items-center gap-2 px-2 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <Link to="/" className="h-auto flex items-center gap-2 px-2 py-1 rounded-2xl hover:bg-[var(--color-lightgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <House strokeWidth={1.5} color='var(--color-maintext)' />
         </Link>
 
 
         <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
 
+{/* cv  */}
         <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl hover:bg-[var(--color-lightgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-125">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
         </a>
@@ -198,7 +199,7 @@ export default function Navbar() {
 
         {/* projects  */}
 
-        <Link to="/projects" className="flex items-center gap-2 px-2 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <Link to="/projects" className="flex items-center gap-2 px-2 py-1 rounded-xl hover:bg-[var(--color-lightgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <Folders strokeWidth={1.5} color='var(--color-maintext)' />
         </Link>
 

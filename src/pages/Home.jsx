@@ -14,11 +14,14 @@ import WorkExperience from '../components/WorkExperience';
 
 const Home = () => {
     return (
-        < div className='mx-[14%] pt-[6%] max-md:pt-[12%] max-md:mx-[5%]'>
-{/* 
+        < div className='mx-[14%] pt-[10%] max-md:pt-[28%] max-md:mx-[5%] pb-90'>
+            {/* 
             <div className='bg-[var(--color-innerbg)] text-[var(--color-maintext)] max-md:pt-[7vh] pt-45 border-t-0 border-b-0 pb-25 max-md:pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden'>
             </div> */}
+
+            <div className='relative bottom-13 max-md:bottom-15'>
                 <HeroSection Name={Data[0].Name} Role={Data[0].Role} Description={Data[0].Description} />
+            </div>
 
             <motion.div
                 initial={{
@@ -35,26 +38,30 @@ const Home = () => {
                 <InfiniteFlow />
             </motion.div>
 
-            <About Para1={Data[1].AboutPara1} Para2={Data[1].AboutPara2} />
+            <div className='relative top-90 max-md:top-65'>
 
-            <ProjectsSection projects={Data[2]} />
+                <About Para1={Data[1].AboutPara1} Para2={Data[1].AboutPara2} />
 
-            <WorkExperience experience={Data[3]} />
 
-            <div className='border-solid border-[var(--color-lightgray)] border-b-[0.5px] w-[100%] mx-auto mt-[5vh]'></div>
+                <ProjectsSection projects={Data[2]} />
 
-            {/* section : how can I help - skipped  */}
+                <WorkExperience experience={Data[3]} />
 
-            {/* section : testimonials - skipped  */}
+                <div className='border-solid border-[var(--color-sidetext)] border-b-[0.5px] w-[90%] mx-auto mt-[5vh]'></div>
 
-            <GetInTouch conclusion={Data[4]} />
+                {/* section : how can I help - skipped  */}
 
-            <div className='max-md:pt-[10vh] pt-30 pb-10 max-md:pb-[15vh]'>
-                <Footer footer={Data[5]} />
+                {/* section : testimonials - skipped  */}
+
+                <GetInTouch conclusion={Data[4]} />
+
+                <div className='max-md:pt-[10vh] pt-30 pb-10 max-md:pb-[4vh]'>
+                    <Footer footer={Data[5]} />
+                </div>
+
+
+
             </div>
-
-
-
 
 
             {/* </div> */}

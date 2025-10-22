@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { RefreshCw, Wifi, Signal } from 'lucide-react';
 
-export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
+export default function PhoneMockup({PhoneWidth, PhoneHeight, WebUrl}) {
     const [url, setUrl] = useState('https://www.othrwrld.studio/');
     const [iframeUrl, setIframeUrl] = useState(`${WebUrl}`);
     const [isLoading, setIsLoading] = useState(false);
@@ -70,9 +70,26 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
                             {/* Notch */}
                             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-25 h-5 bg-black rounded-b-3xl z-30"></div>
 
+                            {/* Safari-like Browser Bar */}
+                            <div className="absolute top-7 left-0 right-0 bg-gradient-to-b from-gray-100 to-white z-10 px-3 py-2 shadow-sm">
+                                <div className="bg-white border border-gray-300 rounded-xl px-4 py-2.5 flex items-center gap-2 shadow-sm">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="text-gray-500">
+                                        <path d="M12 2C9.243 2 7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z" fill="currentColor" />
+                                    </svg>
+                                    <span className="text-sm text-gray-600 flex-1 truncate">
+                                        {iframeUrl.replace(/^https?:\/\//, '')}
+                                    </span>
+                                    <button
+                                        onClick={handleRefresh}
+                                        className="text-gray-500 hover:text-gray-700"
+                                    >
+                                        <RefreshCw size={16} className={isLoading ? 'animate-spin' : ''} />
+                                    </button>
+                                </div>
+                            </div>
 
                             {/* Iframe Content Area */}
-                            <div className="absolute top-7 left-0 right-0 bottom-22 bg-white overflow-hidden">
+                            <div className="absolute top-21 left-0 right-0 bottom-13 bg-white overflow-hidden">
                                 {isLoading ? (
                                     <div className="flex items-center justify-center h-full bg-gray-50">
                                         <div className="text-center">
@@ -90,29 +107,9 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
                                 )}
                             </div>
 
-                            {/* Safari-like Browser Bar */}
-                            <div className="absolute bottom-10 left-0 right-0 bg-gradient-to-b from-gray-100 to-white z-10 px-2 py-1 shadow-sm">
-                            </div>
-
-
-                            {/* bottom bar  */}
-
-                            <div className="absolute bottom-0 left-0 right-0 h-22 bg-gradient-to-t from-gray-50 to-white border-t border-gray-200 z-10">
-                                <div className="bg-white border border-gray-300 rounded-lg my-1 px-3 py-2 flex items-center gap-2 shadow-sm w-[90%] mx-auto">
-                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" className="text-gray-500">
-                                        <path d="M12 2C9.243 2 7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z" fill="currentColor" />
-                                    </svg>
-                                    <span className="text-xs text-gray-600 flex-1 truncate">
-                                        {iframeUrl.replace(/^https?:\/\//, '')}
-                                    </span>
-                                    <button
-                                        onClick={handleRefresh}
-                                        className="text-gray-500 hover:text-gray-700"
-                                    >
-                                        <RefreshCw size={14} className={isLoading ? 'animate-spin' : ''} />
-                                    </button>
-                                </div>
-                                <div className="flex items-center justify-around h-9 px-8">
+                            {/* Safari Bottom Bar */}
+                            <div className="absolute bottom-0 left-0 right-0 h-13 bg-gradient-to-t from-gray-50 to-white border-t border-gray-200 z-10">
+                                <div className="flex items-center justify-around h-10 px-8">
                                     <button className="text-gray-700 hover:text-purple-600">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                                             <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -144,10 +141,8 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
                                 </div>
                                 <div className="h-4 bg-black rounded-t-3xl mx-auto w-40"></div>
                             </div>
-
                         </div>
                     </div>
-
 
                     {/* Side Buttons */}
                     <div className="absolute left-0 top-32 w-1 h-12 bg-gray-700 rounded-r"></div>
