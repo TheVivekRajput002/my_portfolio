@@ -16,7 +16,7 @@ export default function InfiniteFlow() {
     { id: 9, src: NoteBlocSS, alt: "Note Bloc" },
     { id: 10, src: NoteBlocSS, alt: "Note Bloc" },
   ];
-  
+
   return (
     <div className="w-full flex items-center overflow-hidden">
       <style>{`
@@ -34,8 +34,13 @@ export default function InfiniteFlow() {
           display: flex;
           gap: 2rem;
         }
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
       `}</style>
-      
+
       <div className="animate-scroll">
         {/* First set of images */}
         {images.map((image) => (
@@ -43,7 +48,7 @@ export default function InfiniteFlow() {
             key={`first-${image.id}`}
             className="flex-shrink-0"
           >
-            <div  className="max-md:p-2 flex-shrink-0 backdrop-blur-5xl bg-[var(--color-infiniteimgbg)] border-1 border-[var(--color-infiniteimgbg)] rounded-2xl p-3 ">
+            <div className="max-md:p-2 flex-shrink-0 backdrop-blur-xl bg-[var(--color-infiniteimgbg)] border-1 border-[var(--color-infiniteimgbg)] rounded-2xl p-3 ">
               <img
                 src={image.src}
                 alt={image.alt}
@@ -52,14 +57,14 @@ export default function InfiniteFlow() {
             </div>
           </div>
         ))}
-        
+
         {/* Duplicate set for seamless loop */}
         {images.map((image) => (
           <div
             key={`second-${image.id}`}
             className="flex-shrink-0"
           >
-            <div  className="mx-8 flex-shrink-0 backdrop-blur-3xl bg-[var(--color-darkgray)] border-1 border-[var(--color-gray)] rounded-2xl p-3 ">
+            <div className="mx-8 flex-shrink-0 backdrop-blur-xl bg-[var(--color-darkgray)] border-1 border-[var(--color-gray)] rounded-2xl p-3 ">
               <img
                 src={image.src}
                 alt={image.alt}

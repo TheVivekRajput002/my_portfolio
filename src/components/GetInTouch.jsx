@@ -41,7 +41,7 @@ const GetInTouch = ({ conclusion }) => {
 
     return (
         <>
-            <h2 className='font-[500] text-[var(--color-maintext)] text-3xl max-md:text-2xl mb-4 mt-12 '>Get in touch</h2>
+            <h2 className='font-[500] text-[var(--color-maintext)] text-3xl max-md:text-2xl mb-4 mt-9 '>Get in touch</h2>
             <p className='text-[var(--color-sidetext)] text-md max-md:text-sm mt-[15px] mb-10 '>{conclusion.para}</p>
             <form onSubmit={HandleSubmit}>
                 <fieldset className='flex flex-col gap-3 max-md:gap-2'>
