@@ -61,7 +61,7 @@ export default function InfiniteFlow() {
                                     key={`duplicate-${item.id}`}
                                     className="flex-shrink-0  w-auto flex items-center justify-center shadow-xl transition-transform"
                                 >
-                                    <img className='h-12 w-auto' src={item.img} alt="" />
+                                    <img className='h-10 max-md:h-8 w-auto' src={item.img} alt="" />
 
                                 </div>
                             ))}

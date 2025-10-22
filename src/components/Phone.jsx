@@ -49,7 +49,7 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
                 {/* iPhone Device Container */}
                 <div className={`relative transform transition-transform duration-300 ${PhoneWidth} ${PhoneHeight}`}>
                     {/* iPhone Outer Frame with Notch */}
-                    <div className="absolute inset-0 bg-[var(--color-phone)] opacity-95 border-solid border-1 border-[var(--color-gray)] rounded-[55px] p-2">
+                    <div className="absolute inset-0 bg-[var(--color-phone)] border-solid border-1 border-[var(--color-gray)] rounded-[55px] p-2">
                         {/* iPhone Screen */}
                         <div className="relative w-full h-full bg-white rounded-[48px] overflow-hidden border-solid border-[0.05px] border-[var(--color-gray)]">
 

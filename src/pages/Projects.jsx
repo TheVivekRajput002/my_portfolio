@@ -9,10 +9,10 @@ const Projects = () => {
   return (
     <div >
 
-      <ProjectCard Url={`https://my-portfolio-ysrh.vercel.app`} Head="Vivek Rajput's Portfolio" SS={PortfolioSS} content="Developed a web platform as part of a team that enables users to register for workshops, access detailed information about them, and submit feedback or reviews."/>
+      <ProjectCard Url={`https://my-portfolio-ysrh.vercel.app`} Head="Vivek Rajput's Portfolio" SS={PortfolioSS} content="A personal portfolio showcasing my journey as a designer and developer blending creativity and technology to craft intuitive interfaces, bold visuals, and meaningful digital experiences."/>
       <ProjectCard Url={`http://Summerschooljlug.netlify.app`} Head="JEC Linux Users Group Summer School Website" SS={JlugSummerSS2} content="Developed a web platform as part of a team that enables users to register for workshops, access detailed information about them, and submit feedback or reviews."/>
-      <ProjectCard Url={`https://golden-trifle-019de0.netlify.app`} Head="Krishi Mitra" SS={KrishiMitraSS} content="Collaborated in developing an AI-powered Smart Crop Advisory Platform that offers real-time farming insights, image-based crop analysis, and weather or market alerts. Integrated multilingual chatbot and voice support to assist small and marginal farmers with accessible, data-driven guidance."/>
-      <ProjectCard Url={`https://iot-robotics-lab-jec.github.io/index.html`} Head="JEC Robotics Lab Official Website" SS={RoboticsLabSS} content="Collaborated in developing an AI-powered Smart Crop Advisory Platform that offers real-time farming insights, image-based crop analysis, and weather or market alerts. Integrated multilingual chatbot and voice support to assist small and marginal farmers with accessible, data-driven guidance."/>
+      <ProjectCard Url={`https://golden-trifle-019de0.netlify.app`} Head="Krishi Mitra" SS={KrishiMitraSS} content="Collaborated in developing an AI powered Smart Crop Advisory Platform that offers real time farming insights, image based crop analysis, and weather or market alerts. Integrated multilingual chatbot and voice support to assist small and marginal farmers with accessible, data driven guidance."/>
+      <ProjectCard Url={`https://iot-robotics-lab-jec.github.io/index.html`} Head="JEC Robotics Lab Official Website" SS={RoboticsLabSS} content="Designed and developed the official website for the IoT & Robotics Lab, JEC Jabalpur showcasing its innovation-driven initiatives, projects, and collaboration under IIT Bombay’s e-Yantra program."/>
 
     </div>
   )
