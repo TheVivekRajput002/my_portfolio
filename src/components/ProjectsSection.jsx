@@ -25,12 +25,12 @@ const ProjectsSection = ({ projects }) => {
     return (
 
         <>
-            <h2 className=' font-[600] text-[var(--color-maintext)] text-4xl max-md:text-2xl mt-20 max-md:mt-[8vh] mb-10 max-md:mb-[5vh] text-center'>Here’s What I’ve <br />Been Up To.</h2>
+            <h2 className=' font-[600] text-[var(--color-maintext)] text-4xl max-md:text-2xl mt-20 max-md:mt-[8vh] mb-10 max-md:mb-[6vh] text-center'>Here’s What I’ve <br />Been Up To.</h2>
 
-            <div className='flex flex-col '>
+            <div className='flex flex-col'>
 
 
-                <div className='border-[var(--color-gray)] border-solid border rounded-3xl p-4 max-md:p-3 pb-6 flex flex-col max-md:pb-5 gap-4 m-3 max-md:m-0 max-md:mb-2 hover:shadow-md hover:scale-101 transition-all ease-in-out duration-120'>
+                <div className='border-[var(--color-gray)] border-solid border rounded-3xl p-4 max-md:p-3 pb-6 flex flex-col max-md:pb-5 gap-4 m-3 max-md:m-0 max-md:mb-4 hover:shadow-md hover:scale-101 transition-all ease-in-out duration-120'>
                     <img className='rounded-2xl w-full h-auto border-[var(--color-darkgray)] border-solid border' src={JlugSummerSS2} alt="" />
                     <div className='flex flex-col gap-5 mx-auto w-[90%]'>
                         <p className='font-[600] text-[var(--color-maintext)] text-2xl max-md:text-xl'>JEC Linux Users Group Summer School Website</p>
@@ -42,7 +42,7 @@ const ProjectsSection = ({ projects }) => {
                 </div>
 
 
-                <div className='border-[var(--color-gray)] border-solid border rounded-3xl p-4 max-md:p-3 pb-6 flex flex-col max-md:pb-5 gap-4 m-3 max-md:m-0 max-md:mb-2 hover:shadow-md hover:scale-101 transition-all ease-in-out duration-120'>
+                <div className='border-[var(--color-gray)] border-solid border rounded-3xl p-4 max-md:p-3 pb-6 flex flex-col max-md:pb-5 gap-4 m-3 max-md:m-0 max-md:mb-4 hover:shadow-md hover:scale-101 transition-all ease-in-out duration-120'>
                     <img className='rounded-2xl w-full h-auto border-[var(--color-darkgray)] border-solid border' src={KrishiMitraSS} alt="" />
                     <div className='flex flex-col gap-5 mx-auto w-[90%]'>
                         <p className='font-[600] text-[var(--color-maintext)] text-2xl max-md:text-xl'>Krishi Mitra</p>
@@ -53,7 +53,7 @@ const ProjectsSection = ({ projects }) => {
                     </div>
                 </div>
 
-                <div className='border-[var(--color-gray)] border-solid border rounded-3xl p-4 max-md:p-3 pb-6 flex flex-col max-md:pb-5 gap-4 m-3 max-md:m-0 max-md:mb-2 hover:shadow-md hover:scale-101 transition-all ease-in-out duration-120'>
+                <div className='border-[var(--color-gray)] border-solid border rounded-3xl p-4 max-md:p-3 pb-6 flex flex-col max-md:pb-5 gap-4 m-3 max-md:m-0 max-md:mb-4 hover:shadow-md hover:scale-101 transition-all ease-in-out duration-120'>
                     <img className='rounded-2xl w-full h-auto border-[var(--color-darkgray)] border-solid border' src={NoteBlocSS} alt="" />
                     <div className='flex flex-col gap-5 mx-auto w-[90%]'>
                         <p className='font-[600] text-[var(--color-maintext)] text-2xl max-md:text-xl'>NoteBloc Landing Page</p>

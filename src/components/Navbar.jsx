@@ -176,7 +176,7 @@ export default function Navbar() {
           delay: 1.3,
           duration: 0.7
         }}
-        className="z-60 md:hidden fixed bottom-[3vh] left-1/2 -translate-x-1/2 flex items-center gap-4 px-4 py-4 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] backdrop-blur-8xl">
+        className="z-60 md:hidden fixed bottom-[3vh] left-1/2 -translate-x-1/2 flex items-center justify-around gap-[3vw] px-4 py-4 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] backdrop-blur-8xl">
 
         <Link to="/" className="h-auto flex items-center gap-2 px-2 py-1 rounded-2xl hover:bg-[var(--color-lightgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <House strokeWidth={1.5} color='var(--color-maintext)' />
