@@ -6,6 +6,7 @@ import HeroSection from '../components/HeroSection';
 import GetInTouch from '../components/GetInTouch';
 import '../App.css'
 import InfiniteFlow from '../components/InfiniteFlow';
+import IconsFlow from '../components/IconsFlow';
 import About from '../components/About';
 import ProjectsSection from '../components/ProjectsSection';
 import Data from '../assets/Data.json'
@@ -41,7 +42,10 @@ const Home = () => {
             <div className='relative top-90 max-md:top-65'>
 
                 <About Para1={Data[1].AboutPara1} Para2={Data[1].AboutPara2} />
+                <div className='mt-16'>
+                    <IconsFlow />
 
+                </div>
 
                 <ProjectsSection projects={Data[2]} />
 

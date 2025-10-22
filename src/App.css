@@ -1,10 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 
 
-body, html {
+body,
+html {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -15,28 +15,46 @@ body, html {
 ::-webkit-scrollbar {
   display: none;
 }
+
 body {
-  -ms-overflow-style: none;  /* for Internet Explorer and Edge */
-  scrollbar-width: none;      /* for Firefox */
+  -ms-overflow-style: none;
+  /* for Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* for Firefox */
 }
 
 
 :root {
-  --color-bg: light-dark(white,#000); /* main bg  */
-  --color-innerbg: light-dark( #fafafa70,#262626); /* innerbg  */
---color-lightgray: light-dark(#e4e4e466, rgba(24, 23, 23, 0.51)); /* l r border , in between lines, project button bg, input bg*/
---color-navbg: light-dark(#ffffff79,#2222229b); /* navbg */
---color-darkgray: light-dark(#e1e1e18a,#5d5d5d54); /* navbar border, project img border  */
---color-maintext: light-dark(black,#ffffff); 
---color-sidetext: light-dark(#656565,#b8b8b8);
---color-infiniteimgbg: light-dark(#e9e8e854,#36363654); /* infinitflow images bg   */
---color-projectcardbg: light-dark( #ededed36,#262626); /* project card bg  */
-  --color-gray: light-dark(#d4d4d4, #49494975); /* projcet card border, input border  */
-  --color-green: light-dark(#c4ffbb,#c6ffbb);
-  }
+  --color-bg: light-dark(white, #000);
+  /* main bg  */
+  --color-innerbg: light-dark(#fafafa70, #262626);
+  /* innerbg  */
+  --color-lightgray: light-dark(#e4e4e466, rgba(24, 23, 23, 0.51));
+  /* l r border , in between lines, project button bg, input bg*/
+  --color-navbg: light-dark(#ffffff79, #2222229b);
+  /* navbg */
+  --color-darkgray: light-dark(#e1e1e18a, #5d5d5d54);
+  /* navbar border, project img border  */
+  --color-maintext: light-dark(black, #ffffff);
+  /* heading text, phone color  */
+  --color-sidetext: light-dark(#656565, #b8b8b8);
+  /* para text  */
+  --color-infiniteimgbg: light-dark(#e9e8e854, #36363654);
+  /* infinitflow images bg   */
+  --color-projectcardbg: light-dark(#ededed36, #262626);
+  /* project card bg  */
+  --color-gray: light-dark(#d4d4d4, #49494975);
+  /* projcet card border, input border, phone screen border, phone outside border   */
+  --color-green: light-dark(#c4ffbb, #c6ffbb);
 
-  
-  /* @theme {
+  --color-projectcardbg: light-dark(#eaf6ff80, #080c13);
+  --color-blueborder: light-dark(#a6cae8, #1455ada6);
+  --color-phone: light-dark(#000,#080c13);
+  /* phone color  */
+}
+
+
+/* @theme {
   --color-bg: white;
   --color-maintext: black;
   --color-sidetext: #656565;
@@ -46,7 +64,7 @@ body {
   --color-lightgray: #e1e1e1;
 } */
 
-  /* :root {
+/* :root {
     --color-bg: rgb(0, 0, 0);
     --color-maintext: rgb(255, 255, 255);
     --color-sidetext: #b8b8b8;

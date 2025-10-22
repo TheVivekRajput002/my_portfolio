@@ -49,9 +49,9 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
                 {/* iPhone Device Container */}
                 <div className={`relative transform transition-transform duration-300 ${PhoneWidth} ${PhoneHeight}`}>
                     {/* iPhone Outer Frame with Notch */}
-                    <div className="absolute inset-0 bg-black border-solid border-1 border-blue-950 rounded-[55px] p-2">
+                    <div className="absolute inset-0 bg-[var(--color-phone)] opacity-95 border-solid border-1 border-[var(--color-gray)] rounded-[55px] p-2">
                         {/* iPhone Screen */}
-                        <div className="relative w-full h-full bg-white rounded-[48px] overflow-hidden">
+                        <div className="relative w-full h-full bg-white rounded-[48px] overflow-hidden border-solid border-[0.05px] border-[var(--color-gray)]">
 
                             {/* Status Bar */}
                             <div className="absolute top-0 left-0 right-0 h-7 bg-[#414141] z-20">
@@ -72,7 +72,7 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
 
 
                             {/* Iframe Content Area */}
-                            <div className="absolute top-7 left-0 right-0 bottom-22 bg-white overflow-hidden">
+                            <div className="absolute top-7 left-0 right-0 bottom-22 bg-[var(--color-maintext)] overflow-hidden">
                                 {isLoading ? (
                                     <div className="flex items-center justify-center h-full bg-gray-50">
                                         <div className="text-center">
@@ -86,6 +86,13 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
                                         className="w-full h-full border-0"
                                         title="Website Preview"
                                         sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                                        style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            border: 'none',
+                                            overflow: 'auto',
+                                            WebkitOverflowScrolling: 'touch'
+                                        }}
                                     />
                                 )}
                             </div>
@@ -97,8 +104,8 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
 
                             {/* bottom bar  */}
 
-                            <div className="absolute bottom-0 left-0 right-0 h-22 bg-gradient-to-t from-gray-50 to-white border-t border-gray-200 z-10">
-                                <div className="bg-white border border-gray-300 rounded-lg my-1 px-3 py-2 flex items-center gap-2 shadow-sm w-[90%] mx-auto">
+                            <div className="absolute bottom-0 left-0 right-0 h-22 opacity-80 bg-[var(--color-maintext)] border-gray-200 z-10">
+                                <div className="bg-white rounded-lg my-1 px-3 py-2 flex items-center gap-2 shadow-sm w-[90%] mx-auto">
                                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" className="text-gray-500">
                                         <path d="M12 2C9.243 2 7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z" fill="currentColor" />
                                     </svg>
@@ -142,7 +149,7 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
                                         </svg>
                                     </button>
                                 </div>
-                                <div className="h-4 bg-black rounded-t-3xl mx-auto w-40"></div>
+                                <div className="h-6 bg-[var(--color-maintext)] rounded-t-3xl mx-auto w-40"></div>
                             </div>
 
                         </div>

@@ -178,7 +178,7 @@ export default function Navbar() {
         }}
         className="z-60 md:hidden fixed bottom-[3vh] left-1/2 -translate-x-1/2 flex items-center justify-around gap-[3vw] px-4 py-4 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] backdrop-blur-8xl">
 
-        <Link to="/" className="h-auto flex items-center gap-2 px-2 py-1 rounded-2xl hover:bg-[var(--color-lightgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <Link to="/" className="h-auto flex items-center gap-2 px-2 py-1 rounded-2xl">
           <House strokeWidth={1.5} color='var(--color-maintext)' />
         </Link>
 
@@ -186,12 +186,12 @@ export default function Navbar() {
         <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
 
 {/* cv  */}
-        <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl hover:bg-[var(--color-lightgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-125">
+        <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl ">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
         </a>
 
         {/* twitter  */}
-        <a href="https://x.com/tvr002" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl hover:bg-[var(--color-lightgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <a href="https://x.com/tvr002" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl ">
           <svg fill='var(--color-maintext)' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="20" viewBox="0 0 30 30">
             <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
           </svg>
@@ -199,7 +199,7 @@ export default function Navbar() {
 
         {/* projects  */}
 
-        <Link to="/projects" className="flex items-center gap-2 px-2 py-1 rounded-xl hover:bg-[var(--color-lightgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <Link to="/projects" className="flex items-center gap-2 px-2 py-1 rounded-xl">
           <Folders strokeWidth={1.5} color='var(--color-maintext)' />
         </Link>
 

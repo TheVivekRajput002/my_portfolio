@@ -25,7 +25,7 @@ const ProjectsSection = ({ projects }) => {
     return (
 
         <>
-            <h2 className=' font-[600] text-[var(--color-maintext)] text-4xl max-md:text-2xl mt-20 max-md:mt-[8vh] mb-10 max-md:mb-[6vh] text-center'>Here’s What I’ve <br />Been Up To.</h2>
+            <h2 className=' font-[600] text-[var(--color-maintext)] text-4xl max-md:text-2xl mt-18 max-md:mt-[8vh] mb-10 max-md:mb-[6vh] text-center'>Here’s What I’ve <br />Been Up To.</h2>
 
             <div className='flex flex-col'>
 
