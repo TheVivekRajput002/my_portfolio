@@ -2,6 +2,7 @@ import React from 'react'
 import Phone from './Phone'
 import isDark from '../components/Navbar'
 import { motion } from 'motion/react'
+import {Link} from 'react-router-dom'
 
 const ProjectCard = ({ Url, Head, SS, content }) => {
     return (
@@ -21,7 +22,7 @@ const ProjectCard = ({ Url, Head, SS, content }) => {
                     }}
                     className='max-md:hidden'
                 >
-                    <Phone PhoneWidth={`w-[345px]`} PhoneHeight={`h-[85vh]`} WebUrl={Url} />
+                    <Phone PhoneWidth={`w-[345px]`} PhoneHeight={`h-[90vh]`} WebUrl={Url} />
                 </motion.div>
 
                 <motion.div
@@ -43,7 +44,8 @@ const ProjectCard = ({ Url, Head, SS, content }) => {
                         className="relative z-5 py-4 px-5 bg-[var(--color-projectcardbg)] rounded-xl hover:scale-101 shadow-lg hover:shadow-xl">
                         <p className='font-[600] text-[var(--color-maintext)] text-4xl max-md:text-xl'>{Head}</p>
                         <button className='bg-[var(--color-lightgray)] mt-3 text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-sm max-md:text-sm hover:shadow-md hover:scale-101'>
-                            <a href="">View Project &gt;</a>
+                            {/* <a href={Url} target='_blank'>View Project &gt;</a> */}
+                            <Link to="/pagenotfound">View Project &gt;</Link>
                         </button>
                     </motion.div>
 

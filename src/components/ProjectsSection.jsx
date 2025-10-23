@@ -4,6 +4,7 @@ import KrishiMitraSS from '../assets/KrishiMitraSS.webp'
 import NoteBlocSS from '../assets/NoteBlocSS.webp'
 import TheZenWebsiteSS from '../assets/TheZenWebsiteSS.webp'
 import { AnimatePresence, motion } from 'motion/react';
+import {Link} from 'react-router-dom'
 
 
 const ProjectsSection = ({ projects }) => {
@@ -36,7 +37,10 @@ const ProjectsSection = ({ projects }) => {
                         <p className='font-[600] text-[var(--color-maintext)] text-2xl max-md:text-xl'>JEC Linux Users Group Summer School Website</p>
                         <p className=' text-sm text-[var(--color-sidetext)] mt-[-10px] max-md:text-xs'>Collaborated on an AI-powered Crop Advisory Platform providing real-time insights, image-based crop analysis, and multilingual chatbot with voice support for farmer assistance.</p>
                         <span>
-                            <button className='bg-[var(--color-lightgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-md max-md:text-sm'>View Project &gt;</button>
+                            <button className='bg-[var(--color-lightgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-md max-md:text-sm'>
+                                {/* <a href="" target="_blank">View Project &gt;</a> */}
+                                <Link to="/pagenotfound">View Project &gt;</Link>
+                            </button>
                         </span>
                     </div>
                 </div>
@@ -48,7 +52,10 @@ const ProjectsSection = ({ projects }) => {
                         <p className='font-[600] text-[var(--color-maintext)] text-2xl max-md:text-xl'>Krishi Mitra</p>
                         <p className=' text-sm text-[var(--color-sidetext)] mt-[-10px] max-md:text-xs'>Collaborated on an AI-powered Crop Advisory Platform providing real-time insights, image-based crop analysis, and multilingual chatbot with voice support for farmer assistance.</p>
                         <span>
-                            <button className='bg-[var(--color-lightgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-md max-md:text-sm'>View Project &gt;</button>
+                            <button className='bg-[var(--color-lightgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-md max-md:text-sm'>
+                                <Link to="/pagenotfound">View Project &gt;</Link>
+                                {/* <a href="https://golden-trifle-019de0.netlify.app" target="_blank" >View Project &gt;</a> */}
+                            </button>
                         </span>
                     </div>
                 </div>
@@ -59,7 +66,10 @@ const ProjectsSection = ({ projects }) => {
                         <p className='font-[600] text-[var(--color-maintext)] text-2xl max-md:text-xl'>NoteBloc Landing Page</p>
                         <p className=' text-sm text-[var(--color-sidetext)] mt-[-10px] max-md:text-xs'>Its a Landing Page with minimalistitc designa and animations providing the users all the necesaary information about the product</p>
                         <span>
-                            <button className='bg-[var(--color-lightgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-md max-md:text-sm'>View Project &gt;</button>
+                            <button className='bg-[var(--color-lightgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-md max-md:text-sm'>
+                                {/* <a href="https://landing-page-react-seven-gilt.vercel.app/" target="_blank">View Project &gt;</a> */}
+                                <Link to="/pagenotfound">View Project &gt;</Link>
+                            </button>
                         </span>
                     </div>
                 </div>
