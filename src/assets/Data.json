@@ -27,16 +27,22 @@
     ],
     [
         {
-            "time_period": "2024 - Present",
-            "role": "Lead Designer at"
+            "time_period": "June 2025 - Present",
+            "role": "Technical Member at",
+            "companylogo": "/src/assets/CosmosLogo.png",
+            "companyname": "Cosmos"
         },
         {
-            "time_period": "2024 - 2022",
-            "role": "Senior UI/UX Designer at"
+            "time_period": "March 2025 - Present",
+            "role": "Technical Member at",
+            "companylogo": "/src/assets/JlugLogo.png",
+            "companyname": "JLUG"
         },
         {
-            "time_period": "2022 - 2020",
-            "role": "Product Designer at"
+            "time_period": "Feb 2025 - Present",
+            "role": "Technical Member at",
+            "companylogo": "/src/assets/CurvvLogo.png",
+            "companyname": "Curvv"
         }
     ],
     {

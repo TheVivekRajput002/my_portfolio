@@ -8,10 +8,10 @@ const Footer = ({ footer }) => {
 
             <div className='flex gap-5 justify-center'>
                 <a target="_blank" href="https://www.instagram.com/tvr002/"><Instagram height={20} stroke='var(--color-maintext)' strokeWidth={1.5} /></a>
-                <a target="_blank" href=""  ><Mail height={20} stroke='var(--color-maintext)' strokeWidth={1.5} /></a>
+                <a target="_blank" href="mailto:work.tvivekrajput@gmail.com"  ><Mail height={20} stroke='var(--color-maintext)' strokeWidth={1.5} /></a>
                 <a target="_blank" href=""  ><Earth height={20} stroke='var(--color-maintext)' strokeWidth={1.5} /></a>
                 <a target="_blank" href="https://www.linkedin.com/in/vivek-rajput-tvr002/"  ><Linkedin height={20} stroke='var(--color-maintext)' strokeWidth={1.5} /></a>
-                <a target="_blank" href="" >
+                <a target="_blank" href="https://x.com/tvr002" >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
