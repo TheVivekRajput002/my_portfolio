@@ -42,8 +42,8 @@ export default function Navbar() {
           y: 0
         }}
         transition={{
-          delay: 1.3,
-          duration: 0.7
+          delay: 1.4,
+          duration: 0.8
         }}
         className="max-md:hidden fixed top-7 z-100 left-1/2 -translate-x-1/2 flex items-center gap-4 px-4 py-2 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] h-20">
 

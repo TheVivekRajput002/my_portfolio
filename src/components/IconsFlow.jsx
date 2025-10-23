@@ -13,7 +13,7 @@ import FigmaIcon from '/assets/FigmaIcon.png'
 import TailwindcssIcon from '/assets/TailwindcssIcon.png'
 
 export default function InfiniteFlow() {
-    const items = [
+    const icons = [
         { id: 1, img: HtmlIcon },
         { id: 2, img: CssIcon },
         { id: 3, img: ReactIcon },
@@ -26,80 +26,60 @@ export default function InfiniteFlow() {
         { id: 10, img: FigmaIcon },
         { id: 11, img: TailwindcssIcon },
         { id: 12, img: GithubIcon },
-        { id: 1, img: HtmlIcon },
-        { id: 2, img: CssIcon },
-        { id: 3, img: ReactIcon },
-        { id: 4, img: SupabaseIcon },
-        { id: 5, img: PostgresqlIcon },
-        { id: 6, img: MysqlIcon },
-        { id: 7, img: JavascriptIcon },
-        { id: 8, img: PythonIcon },
-        { id: 9, img: FramermotionIcon },
-        { id: 10, img: FigmaIcon },
-        { id: 11, img: TailwindcssIcon },
-        { id: 12, img: GithubIcon },
-
     ];
+
+    // Duplicate once for seamless loop
+    const items = [...icons, ...icons];
 
     return (
         <div className="flex items-center justify-center">
-            <div className="w-full max-w-6xl">
+            <div className="w-full max-w-6xl relative overflow-hidden">
+                {/* Left shadow overlay */}
+                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[var(--color-innerbg)] to-transparent z-10 pointer-events-none"></div>
 
-                <div className="relative overflow-hidden">
-                    {/* Left shadow overlay */}
-                    <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[var(--color-innerbg)] to-transparent z-10 pointer-events-none opacity-100"></div>
+                {/* Right shadow overlay */}
+                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[var(--color-innerbg)] to-transparent z-10 pointer-events-none"></div>
 
-                    {/* Right shadow overlay */}
-                    <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[var(--color-innerbg)] to-transparent z-10 pointer-events-none opacity-100"></div>
-
-                    {/* Scrolling container */}
-                    <div className="flex hover-pause-container">
-                        <div className="flex animate-icons-scroll gap-12">
-                            {items.map((item) => (
-
-                                <div
-                                    key={`duplicate-${item.id}`}
-                                    className="flex-shrink-0  w-auto flex items-center justify-center shadow-xl transition-transform"
-                                >
-                                    <img className='h-10 max-md:h-8 w-auto' src={item.img} alt="" />
-
-                                </div>
-                            ))}
-                        </div>
-                        {/* <div className="flex animate-icons-scroll gap-12 ml-36">
-                            {items.map((item) => (
-
-                                <div
-                                    key={`duplicate-${item.id}`}
-                                    className="flex-shrink-0  w-auto flex items-center justify-center shadow-xl transition-transform"
-                                >
-                                    <img className='h-12 w-auto' src={item.img} alt="" />
-
-                                </div>
-                            ))}
-                        </div> */}
-
+                {/* Scrolling container */}
+                <div className="hover-pause-container">
+                    <div className="scroll-track gap-12 flex">
+                        {items.map((item, index) => (
+                            <div
+                                key={index}
+                                className="flex-shrink-0 w-auto flex items-center justify-center shadow-xl transition-transform"
+                            >
+                                <img
+                                    src={item.img}
+                                    alt=""
+                                    className="h-10 max-md:h-8 w-auto select-none"
+                                    loading="lazy"
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
-
             </div>
 
             <style>{`
-        @keyframes scrolll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-100%);
-          }
-        }
-        
-        .animate-icons-scroll {
-          animation: scrolll 12s linear infinite;
+        @keyframes scroll {
+          0% { transform: translate3d(0, 0, 0); }
+          100% { transform: translate3d(-50%, 0, 0); }
         }
 
-         .hover-pause-container:hover .animate-icons-scroll {
+        .scroll-track {
+          animation: scroll 15s linear infinite;
+          will-change: transform;
+          width: max-content;
+        }
+
+        .hover-pause-container:hover .scroll-track {
           animation-play-state: paused;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .scroll-track {
+            animation: none;
+          }
         }
       `}</style>
         </div>

@@ -15,12 +15,12 @@ import WorkExperience from '../components/WorkExperience';
 
 const Home = () => {
     return (
-        < div className='mx-[14%] pt-[10%] max-md:pt-[28%] max-md:mx-[5%] pb-90'>
+        < div className='mx-[14%] pt-[10%] max-md:pt-[24%] max-md:mx-[5%] pb-90'>
             {/* 
             <div className='bg-[var(--color-innerbg)] text-[var(--color-maintext)] max-md:pt-[7vh] pt-45 border-t-0 border-b-0 pb-25 max-md:pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden'>
             </div> */}
 
-            <div className='relative bottom-13 max-md:bottom-15'>
+            <div className='relative bottom-13 max-md:bottom-10'>
                 <HeroSection Name={HomeData[0].Name} Role={HomeData[0].Role} Description={HomeData[0].Description} />
             </div>
 

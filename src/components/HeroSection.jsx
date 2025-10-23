@@ -11,7 +11,7 @@ const HeroSection = ({ Name, Role, Description }) => {
                 <motion.img
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, ease: "easeOut", delay: 1.1 }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: 1.1 }}
                     src={vivek_rajput_pfp}
                     className='h-[120px] mb-[20px] max-md:h-[85px]'
                 />
@@ -30,9 +30,9 @@ const HeroSection = ({ Name, Role, Description }) => {
                         y: 0
                     }}
                     transition={{
-                        duration: 0.5,
+                        duration: 0.6,
                         ease: "easeOut",
-                        delay: 2.2
+                        delay: 2.3
                     }}
                     className='font-[650] text-[var(--color-maintext)] max-md:text-3xl text-4xl clash'
 
@@ -50,9 +50,9 @@ const HeroSection = ({ Name, Role, Description }) => {
                         y: 0
                     }}
                     transition={{
-                        duration: 0.5,
+                        duration: 0.6,
                         ease: "easeOut",
-                        delay: 2.1
+                        delay: 2.3
                     }}
                     className='font-[650] text-[var(--color-maintext)] text-4xl max-md:text-2xl clash '>
                     {Role}
@@ -70,9 +70,9 @@ const HeroSection = ({ Name, Role, Description }) => {
                         y: 0
                     }}
                     transition={{
-                        duration: 0.5,
+                        duration: 0.6,
                         ease: "easeOut",
-                        delay: 1.8
+                        delay: 2
                     }}
                     className='text-[var(--color-sidetext)] text-md max-lg:text-sm mt-4 max-md:mt-2 mb-7 leading-relaxed poppins'>
                     {Description}
@@ -88,9 +88,9 @@ const HeroSection = ({ Name, Role, Description }) => {
                         y: 0
                     }}
                     transition={{
-                        duration: 0.5,
+                        duration: 0.6,
                         ease: "easeIn",
-                        delay: 1.6
+                        delay: 1.8
                     }}
                     className='bg-[var(--color-green)] px-6 py-3 rounded-full text-center max-md:px-4 max-md:py-2'>
                     <span className='text-sm font-medium text-[#178D00] max-md:text-xs poppins' >

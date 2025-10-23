@@ -1,14 +1,82 @@
 [
     {
-        "head":"Vivek Rajput's Portfolio",
-        "projectss":"/assets/PortfolioSS.png",
-        "content":"A personal portfolio showcasing my journey as a designer and developer blending creativity and technology to craft intuitive interfaces, bold visuals, and meaningful digital experiences.",
-        "url":"https://thevivekrajput-techportfolio.vercel.app"
+        "head": "Vivek Rajput's Portfolio",
+        "ss": "/assets/PortfolioSS.png",
+        "content": "A personal portfolio showcasing my journey as a designer and developer blending creativity and technology to craft intuitive interfaces, bold visuals, and meaningful digital experiences.",
+        "url": "https://thevivekrajput-techportfolio.vercel.app",
+        "icons": [
+            {
+                "id": 1,
+                "img": "/assets/ReactIcon.png"
+            },
+            {
+                "id": 2,
+                "img": "/assets/TailwindcssIcon.png"
+            },
+            {
+                "id": 3,
+                "img": "/assets/FramermotionIcon.png"
+            }
+        ]
     },
     {
-        "head":"JEC Linux Users Group Summer School Website",
-        "projectss":"/assets/JlugSummerSS2.png",
-        "content":"A personal portfolio showcasing my journey as a designer and developer blending creativity and technology to craft intuitive interfaces, bold visuals, and meaningful digital experiences.",
-        "url":"https://thevivekrajput-techportfolio.vercel.app"
+        "head": "JEC Linux Users Group Summer School Website",
+        "ss": "/assets/JlugSummerSS2.webp",
+        "content": "Developed a web platform as part of a team that enables users to register for workshops, access detailed information about them, and submit feedback or reviews.",
+        "url": "http://Summerschooljlug.netlify.app",
+        "icons": [
+            {
+                "id": 1,
+                "img": "/assets/ReactIcon.png"
+            },
+            {
+                "id": 2,
+                "img": "/assets/TailwindcssIcon.png"
+            },
+            {
+                "id": 3,
+                "img": "/assets/SupabaseIcon.png"
+            }
+        ]
+    },
+    {
+        "head": "Krishi Mitra",
+        "ss": "/assets/KrishiMitraSS.webp",
+        "content": "Collaborated in developing an AI powered Smart Crop Advisory Platform that offers real time farming insights, image based crop analysis, and weather or market alerts. Integrated multilingual chatbot and voice support to assist small and marginal farmers with accessible, data driven guidance.",
+        "url": "https://golden-trifle-019de0.netlify.app",
+        "icons": [
+            {
+                "id": 1,
+                "img": "/assets/ReactIcon.png"
+            },
+            {
+                "id": 2,
+                "img": "/assets/TailwindcssIcon.png"
+            },
+            {
+                "id": 3,
+                "img": "/assets/SupabaseIcon.png"
+            }
+        ]
+    },
+    {
+        "head": "JEC Robotics Lab Official Website",
+        "ss": "/assets/RoboticsLabSS.png",
+        "content": "Designed and developed the official website for the IoT & Robotics Lab, JEC Jabalpur showcasing its innovation-driven initiatives, projects, and collaboration under IIT Bombay’s e-Yantra program.",
+        "url": "https://iot-robotics-lab-jec.github.io/index.html",
+        "icons": [
+            {
+                "id": 1,
+                "img": "/assets/ReactIcon.png"
+            },
+            {
+                "id": 2,
+                "img": "/assets/CssIcon.png"
+            },
+            {
+                "id": 3,
+                "img": "/assets/TailwindcssIcon.png"
+            }
+        ]
     }
 ]
