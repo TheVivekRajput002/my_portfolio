@@ -1,7 +1,7 @@
-import JlugSummerSS2 from '../assets/JlugSummerSS2.webp'
-import KrishiMitraSS from '../assets/KrishiMitraSS.webp'
-import NoteBlocSS from '../assets/NoteBlocSS.webp'
-import TheZenWebsiteSS from '../assets/TheZenWebsiteSS.webp'
+import JlugSummerSS2 from '/assets/JlugSummerSS2.webp'
+import KrishiMitraSS from '/assets/KrishiMitraSS.webp'
+import NoteBlocSS from '/assets/NoteBlocSS.webp'
+import TheZenWebsiteSS from '/assets/TheZenWebsiteSS.webp'
 
 export default function InfiniteFlow() {
   const images = [

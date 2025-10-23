@@ -1,9 +1,10 @@
 import React from 'react'
 import ProjectCard from '../components/ProjectCard'
-import JlugSummerSS2 from '../assets/JlugSummerSS2.webp'
-import PortfolioSS from '../assets/PortfolioSS.png'
-import RoboticsLabSS from '../assets/RoboticsLabSS.png'
-import KrishiMitraSS from '../assets/KrishiMitraSS.webp'
+import JlugSummerSS2 from '/assets/JlugSummerSS2.webp'
+import PortfolioSS from '/assets/PortfolioSS.png'
+import RoboticsLabSS from '/assets/RoboticsLabSS.png'
+import KrishiMitraSS from '/assets/KrishiMitraSS.webp'
+
 
 const Projects = () => {
   return (

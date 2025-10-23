@@ -9,7 +9,7 @@ import InfiniteFlow from '../components/InfiniteFlow';
 import IconsFlow from '../components/IconsFlow';
 import About from '../components/About';
 import ProjectsSection from '../components/ProjectsSection';
-import Data from '../assets/Data.json'
+import HomeData from '../data/HomeData.json'
 import WorkExperience from '../components/WorkExperience';
 
 
@@ -21,7 +21,7 @@ const Home = () => {
             </div> */}
 
             <div className='relative bottom-13 max-md:bottom-15'>
-                <HeroSection Name={Data[0].Name} Role={Data[0].Role} Description={Data[0].Description} />
+                <HeroSection Name={HomeData[0].Name} Role={HomeData[0].Role} Description={HomeData[0].Description} />
             </div>
 
             <motion.div
@@ -41,15 +41,15 @@ const Home = () => {
 
             <div className='relative top-90 max-md:top-65'>
 
-                <About Para1={Data[1].AboutPara1} Para2={Data[1].AboutPara2} />
+                <About Para1={HomeData[1].AboutPara1} Para2={HomeData[1].AboutPara2} />
                 <div className='mt-16'>
                     <IconsFlow />
 
                 </div>
 
-                <ProjectsSection projects={Data[2]} />
+                <ProjectsSection projects={HomeData[2]} />
 
-                <WorkExperience experience={Data[3]} />
+                <WorkExperience experience={HomeData[3]} />
 
                 <div className='border-solid border-[var(--color-sidetext)] border-b-[0.5px] w-[90%] mx-auto mt-[5vh]'></div>
 
@@ -57,10 +57,10 @@ const Home = () => {
 
                 {/* section : testimonials - skipped  */}
 
-                <GetInTouch conclusion={Data[4]} />
+                <GetInTouch conclusion={HomeData[4]} />
 
                 <div className='max-md:pt-[10vh] pt-30 pb-10 max-md:pb-[4vh]'>
-                    <Footer footer={Data[5]} />
+                    <Footer footer={HomeData[5]} />
                 </div>
 
 

@@ -1,7 +1,6 @@
 import React from 'react'
-import Data from '../assets/Data.json'
 import { motion } from 'motion/react';
-import vivek_rajput_pfp from '../assets/vr_professional_pfp.png'
+import vivek_rajput_pfp from '/assets/vr_professional_pfp.png'
 
 const HeroSection = ({ Name, Role, Description }) => {
     return (
