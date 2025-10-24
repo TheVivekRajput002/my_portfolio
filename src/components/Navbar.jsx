@@ -65,9 +65,12 @@ export default function Navbar() {
         </Link>
 
         {/* CV  */}
-        <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        {/* <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
-        </a>
+        </a> */}
+        <Link to="/pagenotfound" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+          <FileText strokeWidth={1.5} color='var(--color-maintext)' />
+        </Link>
 
         <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
 
@@ -184,9 +187,12 @@ export default function Navbar() {
         <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
 
         {/* cv  */}
-        <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl ">
+        {/* <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl ">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
-        </a>
+        </a> */}
+        <Link to="/pagenotfound" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+          <FileText strokeWidth={1.5} color='var(--color-maintext)' />
+        </Link>
 
         {/* Linkedin */}
         <a href="https://www.linkedin.com/in/vivek-rajput-tvr002/" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl">

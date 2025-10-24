@@ -18,8 +18,8 @@ const ProjectCard = ({ Url, Head, SS, content, icons }) => {
                         x: 0
                     }}
                     transition={{
-                        duration: 0.7,
-                        delay: 1.1
+                        duration: 0.6,
+                        delay: 0.9
                     }}
                     className='max-md:hidden'
                 >
@@ -34,8 +34,8 @@ const ProjectCard = ({ Url, Head, SS, content, icons }) => {
                         opacity: 1
                     }}
                     transition={{
-                        delay: 2,
-                        duration: 0.2
+                        delay: 1.8,
+                        duration: 0.3
                     }}
                     className='space-y-2'
                 >
