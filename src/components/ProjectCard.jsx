@@ -4,12 +4,13 @@ import isDark from '../components/Navbar'
 import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
 
-const ProjectCard = ({ Url, Head, SS, content, icons }) => {
+const ProjectCard = ({ Url, Head, SS, content, icons,year }) => {
 
     return (
         <div>
             <div className='flex gap-2 my-3 max-md:flex-col-reverse'>
-                {/* <img src={dummyphone} alt="" className='h-140 w-[50%]' /> */}
+
+                {/* phone  */}
                 <motion.div
                     initial={{
                         x: 220,
@@ -23,7 +24,7 @@ const ProjectCard = ({ Url, Head, SS, content, icons }) => {
                     }}
                     className='max-md:hidden'
                 >
-                    <Phone PhoneWidth={`w-[345px]`} PhoneHeight={`h-[90vh]`} WebUrl={Url} />
+                    <Phone PhoneWidth={`w-[335px]`} PhoneHeight={`h-[90vh]`} WebUrl={Url} />
                 </motion.div>
 
                 <motion.div
@@ -44,6 +45,7 @@ const ProjectCard = ({ Url, Head, SS, content, icons }) => {
 
                         className="relative z-5 py-4 px-5 bg-[var(--color-projectcardbg)] rounded-xl hover:scale-101 shadow-lg hover:shadow-xl">
                         <p className='font-[600] text-[var(--color-maintext)] text-4xl max-md:text-xl'>{Head}</p>
+                        <p className='mt-1 font-[10] text-[var(--color-maintext)] text-xs max-md:text-xs'>{year}</p>
                         <button className='bg-[var(--color-lightgray)] mt-3 text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-sm max-md:text-sm hover:shadow-md hover:scale-101'>
                             {/* <a href={Url} target='_blank'>View Project &gt;</a> */}
                             <Link to="/pagenotfound">View Project &gt;</Link>

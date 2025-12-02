@@ -1,6 +1,7 @@
 [
     {
         "head": "Vivek Rajput's Portfolio",
+        "year": "3rd semester",
         "ss": "/assets/PortfolioSS.png",
         "content": "A personal portfolio showcasing my journey as a designer and developer blending creativity and technology to craft intuitive interfaces, bold visuals, and meaningful digital experiences.",
         "url": "https://thevivekrajput-techportfolio.vercel.app",
@@ -21,6 +22,7 @@
     },
     {
         "head": "JEC Linux Users Group Summer School Website",
+        "year": "2nd semester",
         "ss": "/assets/JlugSummerSS2.webp",
         "content": "Developed a web platform as part of a team that enables users to register for workshops, access detailed information about them, and submit feedback or reviews.",
         "url": "http://notcompletedyet",
@@ -41,6 +43,7 @@
     },
     {
         "head": "Krishi Mitra",
+        "year": "3rd semester",
         "ss": "/assets/KrishiMitraSS.webp",
         "content": "Collaborated in developing an AI powered Smart Crop Advisory Platform that offers real time farming insights, image based crop analysis, and weather or market alerts. Integrated multilingual chatbot and voice support to assist small and marginal farmers with accessible, data driven guidance.",
         "url": "https://notcompletedyet",
@@ -61,6 +64,7 @@
     },
     {
         "head": "JEC Robotics Lab Official Website",
+        "year": "2nd semester",
         "ss": "/assets/RoboticsLabSS.png",
         "content": "Designed and developed the official website for the IoT & Robotics Lab, JEC Jabalpur showcasing its innovation-driven initiatives, projects, and collaboration under IIT Bombay’s e-Yantra program.",
         "url": "https://notcompletedyet",

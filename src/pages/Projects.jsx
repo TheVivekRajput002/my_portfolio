@@ -9,11 +9,11 @@ import ProjectsData from '../data/ProjectsData.json'
 
 const Projects = () => {
   return (
-    <div >
+    <div  >
 
       {
         ProjectsData.map((project) => (
-          <ProjectCard Head={project.head} SS={project.ss} content={project.content} Url={project.url} icons={project.icons} />
+          <ProjectCard Head={project.head} SS={project.ss} content={project.content} Url={project.url} icons={project.icons} year={project.year} />
         ))
       }
 
